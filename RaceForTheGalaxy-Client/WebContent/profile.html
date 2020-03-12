@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cuenta Administration</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  background-image: url("82725.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:1400px 800px;
+  overflow-x:hidden;
+}
+div.logo {
+  position: relative;
+  left:530px;
+  top:20px;
+}
+div.p1 {
+  position: absolute;
+  left:620px;
+  top:230px;
+}
+div.p2 {
+  position: absolute;
+  left:540px;
+  top:300px;
+}
+div.p3 {
+  position: absolute;
+  left:500px;
+  top:350px;
+}
+div.pgan {
+  position: absolute;
+  left:500px;
+  top:400px;
+}
+div.pper {
+  position: absolute;
+  left:500px;
+  top:450px;
+}
+div.cerrar {
+  position: absolute;
+  right:20px;
+  top:20px;
+}div.volver {
+  position: absolute;
+  left:650px;
+  top:500px;
+}
+div.opaco{ 
+  position:absolute;
+  border-radius: 25px;
+  display: block;
+  opacity: .9;
+  top:160px;
+  left:250px;
+  height: 500px;
+  width: 70%;
+  filter: alpha(opacity=60);
+  background-color:#808080;
+}
+</style>
+<body>
+	<div class="opaco">
+	</div>
+	<div class="logo">
+		<img src="logo.png" alt="logo" width="292" height="130">
+	</div>
+	
+	<form class='form-inline' action='indexController' method='GET'>
+	<div class="cerrar">
+		<button class="btn btn-primary" type='submit' name='cerrar' value='A'><i class="fa fa-sign-out"></i> Cerrar Sesión</button>
+	</div>
+	</form>
+	
+		<form action="welcome.html" method="POST">
+		  <div class="p1">
+		  	<h4><i class="fa fa-user"></i><b> Tu perfil</b></h4>
+		  </div>
+		  <div class="p2">
+		    <label><b>Frecuencia de juego</b></label>
+		    <label>frecAca</label>
+		  </div>
+		  <div class="p3">
+		    <label><b>Permanencia en el sistema</b></label>
+		    <label>permAca</label>
+		  </div>
+		  <div class="pgan">
+		    <label><b>Partidas ganadas</b></label>
+		    <label>ganadasAca</label>
+		  </div>
+		  <div class="pper">
+		    <label><b>Partidas perdidas</b></label>
+		    <label>perdidosAca</label>
+		  </div>
+		  <div class="volver">
+		  	<button class="btn btn-primary" type="submit" ><i class="fa fa-toggle-left"></i><b> Volver</b></button>
+		  </div>
+		  
+		</form>
+	
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+
+</body>
+</html>

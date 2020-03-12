@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>Shop</TITLE>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>div.jugadores{background-color:LightGray;height: 100px;}"</style>"
+		    </HEAD>
+		    out.println("<BODY>");
+		    HttpSession session = request.getSession();
+		    /*ArrayList<beanProducto> bean = (ArrayList<beanProducto>) session.getAttribute("cartas");
+		    out.println("<B>Bean Name:</B> " + bean.size() + "<BR>");
+		    for(beanProducto aux: bean) {
+		    	out.println("<B>Bean Name:</B> " + aux.getName() + "<BR>");
+		    	out.println("<B>Bean Name:</B> " + aux.getUnit() + "<BR>");
+		    }
+		    Cookie[] cookies = request.getCookies(); 
+		    int length = cookies.length;
+		    for (int i=0; i < length; i++) {
+		    Cookie cookie = cookies[i];
+		    out.println("<B>Cookie Name:</B> " + cookie.getName() + "<BR>"); 
+		    out.println("<B>Cookie Value:</B> " + cookie.getValue() + "<BR>");
+		    }*/
+		    out.println("<div class='row'>\n" + 
+			    		"	<div class='col-sm' style='background-color:LightGray;height: 70px;'> Jugador Local </div>\n" + 
+			    		"	<div class='col-sm' style='background-color:LightGray;height: 70px;'> Segundo Jugador </div>\n" + 
+			    		"	<div class='col-sm' style='background-color:LightGray;height: 70px;'> Tercer Jugador </div>\n" + 
+			    		"	<div class='col-sm' style='background-color:LightGray;height: 70px;'> Cuatro Jugador </div>\n" + 
+			    		"	<div class='col-sm'>\n" + 
+			    		"		<a class='btn btn-primary' href='#' role='button'> Abandonar Partida </a>\n" + 
+			    		"	</div>\n" + 
+			    		"</div>\n"+
+			    		"<br>");
+		    out.println("<div class='btn-group' role='group' style='position: absolute; left: 400px;'>\n" + 
+		    			"  <button type='button' >I Explorar</button>\n" + 
+		    			"  <button type='button' >II Investigar</button>\n" + 
+		    			"  <button type='button' >III Colonizar</button>\n" + 
+		    			"  <button type='button' >IV Consumir</button>\n" + 
+		    			"  <button type='button' >V Producir</button>\n" + 
+		    			"</div>"+
+		    			"<br>");
+		    out.println("<div class='container' style='height:280px;background-color:LightGray;'>"+
+		    			"<h3>PLANETAS</h3>"+
+		    			"	<div class='card' style='width:15%; height:200px;'>"+
+		    			"		<img src='http://i.imgur.com/pfUfp.jpg' class='card-img-left' style='width:100%; height:200px;'>"+
+		    			"	</div>"+
+		    			"</div>"+
+		    			"<br>"+
+		    			"<div style='background-color:LightGray;'>"+
+		    			"<h3>Cartas</h3>"+
+		    			"<div class='row'>"+
+		    			"	<div class='col-md-2 bg-gradient-info'>"+
+		    			"		<img src='http://i.imgur.com/pfUfp.jpg' class='card-img-left' style='width:60%; height:200px;'>"+
+		    			"	</div>"+
+		    			"	<div class='col-md-2'>"+
+		    			"		<img src='http://i.imgur.com/pfUfp.jpg' class='card-img-left' style='width:60%; height:200px;'>"+
+		    			"	</div>"+
+		    			"	<div class='col-md-2' style='background-color:Silver;'>"+
+		    			"		<img src='http://i.imgur.com/pfUfp.jpg' class='card-img-left' style='width:60%; height:200px;'>"+
+		    			"	</div>"+
+		    			"</div>"+
+		    			"</div>");
+		      out.println("</BODY>");
+		      out.println("</HTML>");
